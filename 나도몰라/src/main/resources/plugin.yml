@@ -1,0 +1,15 @@
+name: FarmingSeasons
+version: 1.1.0
+main: com.example.farmingseasons.FarmingSeasons
+api-version: 1.20
+authors: [YourName]
+commands:
+  season:
+    description: Manage seasons
+    usage: |
+      /season check - 현재 계절 확인
+      /season set <계절> [일수] - 계절 변경
+permissions:
+  farmingseasons.admin:
+    description: Allows season management
+    default: op

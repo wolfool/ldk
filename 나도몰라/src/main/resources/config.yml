@@ -1,0 +1,47 @@
+# 계절 설정
+seasons:
+  spring:
+    duration: 7
+    growth_rate: 1.5
+    message: "&a✔ 봄이 시작되었습니다! 작물이 빠르게 자랍니다."
+    events:
+      - "FLOWER_GROWTH"
+    crops:
+      - WHEAT
+      - CARROTS
+      - POTATOES
+      - BEETROOTS
+
+  summer:
+    duration: 7
+    growth_rate: 0.7
+    message: "&c☀ 여름이 시작되었습니다! 작물이 타지 않도록 주의하세요."
+    events:
+      - "CROP_BURN"
+    crops:
+      - MELON
+      - PUMPKIN
+
+  autumn:
+    duration: 7
+    growth_rate: 1.2
+    message: "&6🍂 가을이 시작되었습니다! 수확량이 증가합니다."
+    events:
+      - "LEAF_DECAY"
+    crops:
+      - WHEAT
+      - POTATOES
+
+  winter:
+    duration: 7
+    growth_rate: 0.3
+    message: "&b❄ 겨울이 시작되었습니다! 작물이 얼 수 있습니다."
+    events:
+      - "CROP_FREEZE"
+    crops: []
+
+# 보스바 설정
+bossbar:
+  enabled: true
+  color_by_season: true
+  update_interval: 20
